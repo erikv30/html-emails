@@ -6,25 +6,361 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Email practice3</title>
     <style type="text/css">
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      table {
-        border-spacing: 0;
-      }
-      td {
-        padding: 0;
-      }
-      img {
-        border: 0;
-      }
-
       @media screen and (max-width: 600px) {
+        img.third-col-img {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
+        .padding {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
       }
       @media screen and (max-width: 400px) {
+        img.col-img {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
       }
     </style>
   </head>
-  <body></body>
+  <body style="margin: 0; padding: 0">
+    <center
+      class="wrapper"
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #cccccc;
+        padding-bottom: 40px;
+      "
+    >
+      <table
+        class="main"
+        width="100%"
+        style="
+          background-color: #ffffff;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 600px;
+          border-spacing: 0;
+          color: #4a4a4a;
+          font-family: sans-serif;
+        "
+      >
+        <!--Logo-->
+        <tr>
+          <td style="padding: 0">
+            <table width="100%" style="border-spacing: 0">
+              <tr>
+                <td style="padding: 10px; background-color: #388cda">
+                  <a
+                    href="#"
+                    style="
+                      text-decoration: none;
+                      color: #ffffff;
+                      text-align: center;
+                    "
+                    ><h1 style="margin: 0">Logo Here</h1></a
+                  >
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--banner-->
+        <tr>
+          <td style="padding: 0">
+            <a href="#"
+              ><img
+                src="https://github.com/erikv30/html-emails/blob/master/practice3/img/1200x700.jpg?raw=1"
+                alt="banner"
+                width="600"
+                style="max-width: 100%; border: 0"
+            /></a>
+          </td>
+        </tr>
+        <!--three columns-->
+        <tr>
+          <td style="padding: 0">
+            <table width="100%" style="border-spacing: 0">
+              <tr>
+                <td
+                  class="three-columns"
+                  style="
+                    padding: 0;
+                    text-align: center;
+                    font-size: 0;
+                    padding-top: 40px;
+                    padding-bottom: 30px;
+                  "
+                >
+                  <table
+                    class="column"
+                    width="100%"
+                    style="
+                      border-spacing: 0;
+                      width: 100%;
+                      max-width: 200px;
+                      display: inline-block;
+                      vertical-align: top;
+                    "
+                  >
+                    <tr>
+                      <td class="padding" style="padding: 15px">
+                        <table
+                          class="content"
+                          width="100%"
+                          style="
+                            border-spacing: 0;
+                            font-size: 15px;
+                            line-height: 20px;
+                          "
+                        >
+                          <tr>
+                            <td style="padding: 0">
+                              <a href="#"
+                                ><img
+                                  class="col-img"
+                                  src="https://github.com/erikv30/html-emails/blob/master/practice3/img/380x280.jpg?raw=1"
+                                  alt="watch"
+                                  width="150"
+                                  style="max-width: 150; border: 0"
+                              /></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 10px">
+                              <p style="font-size: 17px; font-weight: bold">
+                                APPLE WATCH
+                              </p>
+                              <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Perferendis, facere?
+                              </p>
+                              <a
+                                href="#"
+                                style="
+                                  text-decoration: none;
+                                  color: #388cda;
+                                  font-size: 16px;
+                                "
+                                >Learn more..</a
+                              >
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <table
+                    class="column"
+                    width="100%"
+                    style="
+                      border-spacing: 0;
+                      width: 100%;
+                      max-width: 200px;
+                      display: inline-block;
+                      vertical-align: top;
+                    "
+                  >
+                    <tr>
+                      <td class="padding" style="padding: 15px">
+                        <table
+                          class="content"
+                          width="100%"
+                          style="
+                            border-spacing: 0;
+                            font-size: 15px;
+                            line-height: 20px;
+                          "
+                        >
+                          <tr>
+                            <td style="padding: 0">
+                              <a href="#"
+                                ><img
+                                  class="col-img"
+                                  src="https://github.com/erikv30/html-emails/blob/master/practice3/img/380x280-2.jpg?raw=1"
+                                  alt="watch"
+                                  width="150"
+                                  style="max-width: 150; border: 0"
+                              /></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 10px">
+                              <p style="font-size: 17px; font-weight: bold">
+                                AIR PODS
+                              </p>
+                              <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Perferendis, facere?
+                              </p>
+                              <a
+                                href="#"
+                                style="
+                                  text-decoration: none;
+                                  color: #388cda;
+                                  font-size: 16px;
+                                "
+                                >Learn more..</a
+                              >
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <table
+                    class="column"
+                    width="100%"
+                    style="
+                      border-spacing: 0;
+                      width: 100%;
+                      max-width: 200px;
+                      display: inline-block;
+                      vertical-align: top;
+                    "
+                  >
+                    <tr>
+                      <td class="padding" style="padding: 15px">
+                        <table
+                          class="content"
+                          width="100%"
+                          style="
+                            border-spacing: 0;
+                            font-size: 15px;
+                            line-height: 20px;
+                          "
+                        >
+                          <tr>
+                            <td style="padding: 0">
+                              <a href="#"
+                                ><img
+                                  class="third-col-img"
+                                  src="https://github.com/erikv30/html-emails/blob/master/practice3/img/380x280-3.jpg?raw=1"
+                                  alt="watch"
+                                  width="150"
+                                  style="max-width: 150; border: 0"
+                              /></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 10px">
+                              <p style="font-size: 17px; font-weight: bold">
+                                WATCH BANDS
+                              </p>
+                              <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Perferendis, facere?
+                              </p>
+                              <a
+                                href="#"
+                                style="
+                                  text-decoration: none;
+                                  color: #388cda;
+                                  font-size: 16px;
+                                "
+                                >Learn more..</a
+                              >
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--socials-->
+        <tr>
+          <td style="padding: 0">
+            <table width="100%" style="border-spacing: 0">
+              <tr>
+                <td
+                  style="
+                    background-color: #388cda;
+                    padding: 15px;
+                    text-align: center;
+                  "
+                >
+                  <p
+                    style="font-size: 18px; color: #ffffff; margin-bottom: 15px"
+                  >
+                    Connect with us
+                  </p>
+                  <a href="#"
+                    ><img
+                      src="https://github.com/erikv30/html-emails/blob/master/practice3/img/white-facebook.png?raw=1"
+                      width="30"
+                      alt="facebook"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://github.com/erikv30/html-emails/blob/master/practice3/img/white-twitter.png?raw=1"
+                      width="30"
+                      alt="twitter"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://github.com/erikv30/html-emails/blob/master/practice3/img/white-youtube.png?raw=1"
+                      width="30"
+                      alt="youtube"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://github.com/erikv30/html-emails/blob/master/practice3/img/white-linkedin.png?raw=1"
+                      width="30"
+                      alt="linkedin"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://github.com/erikv30/html-emails/blob/master/practice3/img/white-instagram.png?raw=1"
+                      width="30"
+                      alt="instagram"
+                  /></a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--footer-->
+        <tr>
+          <td style="padding: 0; background-color: #efefef">
+            <table width="100%" style="border-spacing: 0">
+              <tr>
+                <td style="padding: 30px 10px; text-align: center">
+                  <a href="#" style="text-decoration: none; color: #388cda">
+                    <h2 style="margin: 0">Logo Here</h2>
+                  </a>
+                  <p style="margin-top: 30px">HTML Email practice3</p>
+                  <p>San José, Costa Rica</p>
+                  <p>
+                    <a href="#" style="text-decoration: none; color: #388cda"
+                      >example@email.com</a
+                    >
+                  </p>
+                  <p>
+                    <a href="#" style="text-decoration: none; color: #388cda"
+                      >506+ 0000-0000</a
+                    >
+                  </p>
+                  <p style="font-size: 13px; margin-top: 40px">
+                    <a href="#" style="text-decoration: none; color: #388cda"
+                      >UNSUBSCRIBE</a
+                    >
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--blue line-->
+        <tr>
+          <td height="20" style="background-color: #388cda; padding: 0"></td>
+        </tr>
+      </table>
+    </center>
+  </body>
 </html>
